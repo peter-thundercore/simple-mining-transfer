@@ -46,7 +46,7 @@ export const TTStaking = () => {
       getNFT();
     } else {
       setLoading(false);
-      setError("please connect your wallet");
+      // setError("please connect your wallet");
     }
   }, [signerData]);
 
@@ -96,7 +96,7 @@ export const TTStaking = () => {
     <div style={{ margin: "20px" }}>
       <h1 className="mb-4 text-lg">Mining transfer tool</h1>
       <form onSubmit={(e) => handleSubmit(e)} className="mr-4">
-        {userOwnedTokenIDS.length === 0 && (
+        {address && userOwnedTokenIDS.length === 0 && (
           <h3 className="my-2" style={{ color: "red" }}>
             You have no Mining NFT
           </h3>

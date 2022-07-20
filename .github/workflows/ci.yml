@@ -20,7 +20,6 @@ jobs:
         run: |
           npm install
           npm run build
-          touch out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
