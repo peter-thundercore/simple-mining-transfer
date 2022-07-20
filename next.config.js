@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   distDir: "build",
+  assetPrefix: ".",
 };
 
 module.exports = nextConfig;
